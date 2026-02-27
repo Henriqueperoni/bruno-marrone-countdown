@@ -1,97 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno & Marrone - Show Porto 2026</title>
+    <title>Bruno & Marrone em Porto - Contagem Regressiva</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <h1>🎸 Bruno & Marrone 🎸</h1>
-            <p class="subtitle">Show em Porto - 8 de Março de 2026</p>
+    <div class="overlay"></div>
+    
+    <main class="content">
+        <header>
+            <h1>Bruno & Marrone em Porto</h1>
+            <p class="location">📅 08 de Março | 🕗 20:00 (Dublin Time)</p>
         </header>
 
-        <!-- Countdown -->
-        <section class="countdown-section">
-            <h2>Contagem Regressiva</h2>
-            <div class="countdown">
-                <div class="countdown-item">
-                    <span id="days" class="countdown-number">0</span>
-                    <p class="countdown-label">Dias</p>
-                </div>
-                <div class="countdown-item">
-                    <span id="hours" class="countdown-number">0</span>
-                    <p class="countdown-label">Horas</p>
-                </div>
-                <div class="countdown-item">
-                    <span id="minutes" class="countdown-number">0</span>
-                    <p class="countdown-label">Minutos</p>
-                </div>
-                <div class="countdown-item">
-                    <span id="seconds" class="countdown-number">0</span>
-                    <p class="countdown-label">Segundos</p>
-                </div>
+        <section class="countdown-container">
+            <div class="time-box">
+                <span id="days">00</span>
+                <p>Dias</p>
+            </div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <p>Horas</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <p>Minutos</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <p>Segundos</p>
             </div>
         </section>
 
-        <!-- Gallery -->
-        <section class="gallery-section">
-            <h2>📸 Galeria</h2>
-            <div class="gallery">
-                <img src="https://via.placeholder.com/300x300?text=Bruno+%26+Marrone" alt="Bruno & Marrone">
-                <img src="https://via.placeholder.com/300x300?text=Porto" alt="Porto">
-                <img src="https://via.placeholder.com/300x300?text=Show" alt="Show">
+        <section class="player">
+            <h3>📻 Som do Boteco</h3>
+            <div class="music-info">
+                <p id="song-title">Selecione o Play</p>
             </div>
+            <div class="controls">
+                <button onclick="prevTrack()">⏮</button>
+                <button id="play-btn" onclick="togglePlay()">▶️</button>
+                <button onclick="nextTrack()">⏭</button>
+            </div>
+            <audio id="audio-element"></audio>
         </section>
 
-        <!-- Drinks -->
-        <section class="drinks-section">
-            <h2>🍺 Bebidas</h2>
-            <div class="drinks">
-                <div class="drink-card">
-                    <h3>🍺 Cerveja</h3>
-                    <p>A companheira perfeita para uma boa música!</p>
-                </div>
-                <div class="drink-card">
-                    <h3>🥃 Whiskey</h3>
-                    <p>Para os momentos mais especiais do show!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Music Player -->
-        <section class="music-section">
-            <h2>🎵 Playlist</h2>
-            <div class="player">
-                <div class="player-controls">
-                    <button id="prevBtn" class="btn">⏮️ Anterior</button>
-                    <button id="playBtn" class="btn play-btn">▶️ Play</button>
-                    <button id="nextBtn" class="btn">Próxima ⏭️</button>
-                </div>
-                <audio id="audioPlayer"></audio>
-                <div class="current-song">
-                    <p id="songTitle">Selecione uma música</p>
-                </div>
-            </div>
-
-            <!-- Playlist Menu -->
-            <div class="playlist-menu">
-                <h3>Lista de Músicas:</h3>
-                <ul id="playlistUl">
-                    <!-- Será preenchido por JavaScript -->
-                </ul>
-            </div>
-        </section>
-
-        <!-- Porto Info -->
-        <section class="porto-section">
-            <h2>🏛️ Porto, Portugal</h2>
-            <p>Uma das cidades mais belas de Portugal, berço de histórias, tradição e o melhor vinho do Porto! 🍷</p>
-        </section>
-    </div>
+        <footer class="drinks-icon">
+            🍺 🥃 🍺
+            <p>Preparem os fígados!</p>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
