@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #e94560 0%, #ffd700 100%);
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+}
+
+.header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #1a1a2e;
+    font-weight: bold;
+}
+
+/* Countdown Section */
+.countdown-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.countdown-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    background: linear-gradient(135deg, #e94560, #c23456);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(233, 69, 96, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.countdown-item:hover {
+    transform: translateY(-5px);
+}
+
+.countdown-number {
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.countdown-label {
+    font-size: 1em;
+    color: #ffd700;
+    margin-top: 10px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Drinks Section */
+.drinks-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.drinks-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.drinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.drink-card {
+    background: linear-gradient(135deg, #2a2a4e, #3a3a6e);
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #e94560;
+    flex: 1;
+    max-width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.drink-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.drink-card p {
+    color: #ccc;
+}
+
+/* Music Section */
+.music-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.music-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.player {
+    background: linear-gradient(135deg, #2a2a4e, #3a3a6e);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #e94560, #ffd700);
+    border: none;
+    border-radius: 5px;
+    color: #1a1a2e;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.play-btn {
+    padding: 15px 40px;
+    font-size: 1.2em;
+}
+
+.current-song {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* Playlist Menu */
+.playlist-menu {
+    background: #2a2a4e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.playlist-menu h3 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.playlist-menu ul {
+    list-style: none;
+}
+
+.playlist-menu li {
+    padding: 10px 15px;
+    background: #3a3a6e;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-left: 3px solid #e94560;
+}
+
+.playlist-menu li:hover {
+    background: #e94560;
+}
+
+.playlist-menu li.active {
+    background: #ffd700;
+    color: #1a1a2e;
+}
+
+/* Porto Section */
+.porto-section {
+    background: linear-gradient(135deg, #2a2a4e, #3a3a6e);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border-top: 5px solid #ffd700;
+}
+
+.porto-section h2 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.porto-section p {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .countdown-number {
+        font-size: 2em;
+    }
+
+    .gallery img {
+        width: 200px;
+        height: 200px;
+    }
+}
