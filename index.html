@@ -3,54 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno & Marrone em Porto - Contagem Regressiva</title>
+    <title>Bruno & Marrone em Porto</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="background-image"></div>
     <div class="overlay"></div>
     
     <main class="content">
         <header>
-            <h1>Bruno & Marrone em Porto</h1>
-            <p class="location">📅 08 de Março | 🕗 20:00 (Dublin Time)</p>
+            <p class="pre-title">CONTAGEM REGRESSIVA</p>
+            <h1>Bruno & Marrone <span>em Porto</span></h1>
+            <div class="event-info">
+                <span>📍 Porto, Portugal</span>
+                <span>🗓️ 08 de Março</span>
+                <span>🕗 20:00 (Dublin Time)</span>
+            </div>
         </header>
 
         <section class="countdown-container">
-            <div class="time-box">
-                <span id="days">00</span>
-                <p>Dias</p>
-            </div>
-            <div class="time-box">
-                <span id="hours">00</span>
-                <p>Horas</p>
-            </div>
-            <div class="time-box">
-                <span id="minutes">00</span>
-                <p>Minutos</p>
-            </div>
-            <div class="time-box">
-                <span id="seconds">00</span>
-                <p>Segundos</p>
-            </div>
+            <div class="time-box"><span id="days">00</span><p>Dias</p></div>
+            <div class="time-box"><span id="hours">00</span><p>Horas</p></div>
+            <div class="time-box"><span id="minutes">00</span><p>Minutos</p></div>
+            <div class="time-box"><span id="seconds">00</span><p>Segundos</p></div>
         </section>
 
-        <section class="player">
-            <h3>📻 Som do Boteco</h3>
-            <div class="music-info">
-                <p id="song-title">Selecione o Play</p>
+        <div class="music-card">
+            <div class="player-header">
+                <span>📻 Seleção do Boteco</span>
+                <span class="drinks">🍺 🥃</span>
             </div>
-            <div class="controls">
-                <button onclick="prevTrack()">⏮</button>
-                <button id="play-btn" onclick="togglePlay()">▶️</button>
-                <button onclick="nextTrack()">⏭</button>
+            <div class="spotify-wrapper">
+                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0S6pXon69fT?utm_source=generator&theme=0" 
+                    width="100%" height="80" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
             </div>
-            <audio id="audio-element"></audio>
-        </section>
+        </div>
 
-        <footer class="drinks-icon">
-            🍺 🥃 🍺
-            <p>Preparem os fígados!</p>
+        <footer>
+            <p>Preparem o fígado, o show vai começar!</p>
         </footer>
     </main>
 
